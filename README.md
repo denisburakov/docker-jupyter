@@ -11,4 +11,7 @@ To remove images:
 To remove images:
 `docker volume prune`
 
+To build an image:
+`sudo docker build -t jupyter-lab .`
+`sudo docker run -it --name jupyter -p 8888:8888 -v "{your_path_here}:/home/lab" jupyter-lab`
 
